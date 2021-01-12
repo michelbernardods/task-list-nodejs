@@ -1,16 +1,13 @@
-# desafio-node-bootcamp
+Challenge 01 bootcamp
 
+About the challenge Create an application to store projects and their tasks from scratch using Express.
 
-Desafio 01 bootcamp
+POST / projects routes: The route must receive id and title within the body and register a new project within an array in the following format: {id: "1", title: 'New project', tasks: []}; Be sure to send both the project ID and the title in string format with double quotes.
 
-Sobre o desafio Crie uma aplicação para armazenar projetos e suas tarefas do zero utilizando Express.
+GET / projects: Route that lists all projects and their tasks;
 
-Rotas POST /projects: A rota deve receber id e title dentro do corpo e cadastrar um novo projeto dentro de um array no seguinte formato: { id: "1", title: 'Novo projeto', tasks: [] }; Certifique-se de enviar tanto o ID quanto o título do projeto no formato string com aspas duplas.
+PUT / projects / id The route should only change the project title with the id present in the route parameters;
 
-GET /projects: Rota que lista todos projetos e suas tarefas;
+DELETE / projects / id The route must delete the project with the id present in the route parameters;
 
-PUT /projects/id A rota deve alterar apenas o título do projeto com o id presente nos parâmetros da rota;
-
-DELETE /projects/id A rota deve deletar o projeto com o id presente nos parâmetros da rota;
-
-POST /projects/:id/tasks: A rota deve receber um campo title e armazenar uma nova tarefa no array de tarefas de um projeto específico escolhido através do id presente nos parâmetros da rota;
+POST / projects /: id / tasks: The route must receive a title field and store a new task in the task array of a specific project chosen through the id present in the route parameters;
